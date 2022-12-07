@@ -1,0 +1,380 @@
+<!DOCTYPE html><html><head>
+      <title>ReadmePlantUmlDiagram</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\akade\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.1\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="ibtp-messenger-client">IBTP Messenger Client</h1>
+
+<h2 class="mume-header" id="1-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5">1. &#x412;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435;</h2>
+
+<p>WPF &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x435;, &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x44E;&#x449;&#x435;&#x435; &#x438;&#x437; &#x441;&#x435;&#x431;&#x44F; &#x444;&#x440;&#x43E;&#x43D;&#x442;&#x44D;&#x43D;&#x434;, &#x442;&#x43E;&#x43D;&#x43A;&#x438;&#x439; &#x43A;&#x43B;&#x438;&#x435;&#x43D;&#x442; &#x43A; &#x431;&#x44D;&#x43A;&#x435;&#x43D;&#x434;&#x443; &#x441; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x430;&#x43C;&#x438; IBPT, &#x440;&#x435;&#x43B;&#x438;&#x437;&#x443;&#x44E;&#x449;&#x438;&#x439; &#x43F;&#x435;&#x440;&#x432;&#x438;&#x447;&#x43D;&#x443;&#x44E; &#x434;&#x435;&#x442;&#x435;&#x43A;&#x446;&#x438;&#x44E; c &#x43F;&#x43E;&#x43C;&#x43E;&#x449;&#x44C;&#x44E; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x438; OpenCV</p>
+<h2 class="mume-header" id="2-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">2. &#x421;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x430; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x43E;&#x431;&#x435;&#x441;&#x43F;&#x435;&#x447;&#x435;&#x43D;&#x438;&#x44F;</h2>
+
+<p>&#x41D;&#x438;&#x436;&#x435; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x430; &#x434;&#x438;&#x430;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x430; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x43E;&#x432;,  &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x439;, &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x435;&#x439; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x439; &#x438; &#x441;&#x43B;&#x443;&#x436;&#x435;&#x431;&#x43D;&#x44B;&#x445; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x43E;&#x432; &#x432; &#x441;&#x43E;&#x43B;&#x44E;&#x448;&#x435;&#x43D;&#x435;:</p>
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="945px" preserveAspectRatio="none" style="width:884px;height:945px;background:#FFFFFF;" version="1.1" viewBox="0 0 884 945" width="884px" zoomAndPan="magnify"><defs><filter height="300%" id="fo2zihommpcpd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ff9b95b7a08746504d485e7dd5151f47]
+cluster mcl--><polygon fill="#ADD8E6" filter="url(#fo2zihommpcpd)" points="66,16,76,6,722,6,722,619,712,629,66,629,66,16" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="712" x2="722" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.5;" x1="66" x2="712" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.5;" x1="712" x2="712" y1="16" y2="629"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="125" x="327.5" y="33.5332">Messenger Client</text><!--MD5=[a7bd26654d8067b7c8161c60d244f04a]
+cluster xaml--><polygon fill="#90EE90" filter="url(#fo2zihommpcpd)" points="263,63,308,63,315,86.6094,614,86.6094,614,237,263,237,263,63" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="263" x2="315" y1="86.6094" y2="86.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="39" x="267" y="79.5332">XAML</text><!--MD5=[ab3535e03438b285dc97b402786c2105]
+cluster MainWindow--><rect fill="#90EE90" filter="url(#fo2zihommpcpd)" height="90" style="stroke:#000000;stroke-width:1.5;" width="279" x="303" y="115"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="398" y="131.5332">MainWindow</text><!--MD5=[6c1c1e79e43cb7805f8b8d7de82e0af7]
+cluster vms--><polygon fill="#90EE90" filter="url(#fo2zihommpcpd)" points="263,277,358,277,365,300.6094,690,300.6094,690,451,263,451,263,277" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="263" x2="365" y1="300.6094" y2="300.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="267" y="293.5332">View Models</text><!--MD5=[a3ba6051c17b9c41b6c5237869c7bb5f]
+cluster MainViewModel--><rect fill="#90EE90" filter="url(#fo2zihommpcpd)" height="90" style="stroke:#000000;stroke-width:1.5;" width="355" x="303" y="329"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="111" x="425" y="345.5332">MainViewModel</text><!--MD5=[c652ba6da52c178cf87e21941e095d8f]
+cluster uis--><polygon fill="#90EE90" filter="url(#fo2zihommpcpd)" points="98,321,184,321,191,344.6094,223,344.6094,223,427,98,427,98,321" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="98" x2="191" y1="344.6094" y2="344.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="80" x="102" y="337.5332">UI Services</text><!--MD5=[a7836e96c21d63b3cd09311eb50bbe35]
+cluster bs--><polygon fill="#90EE90" filter="url(#fo2zihommpcpd)" points="263,491,400,491,407,514.6094,434,514.6094,434,597,263,597,263,491" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="263" x2="407" y1="514.6094" y2="514.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="131" x="267" y="507.5332">Business Services</text><!--MD5=[65e3624938aecf6ffe769d774f7e7438]
+cluster mco--><polygon fill="#ADD8E6" filter="url(#fo2zihommpcpd)" points="16,671,26,661,465,661,465,928,455,938,16,938,16,671" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="455" x2="465" y1="671" y2="661"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="455" y1="671" y2="671"/><line style="stroke:#000000;stroke-width:1.5;" x1="455" x2="455" y1="671" y2="938"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="118" x="177.5" y="688.5332">Messenger Core</text><!--MD5=[61733d7767fb1e0c541f1c461b9dc67c]
+cluster ApiGate--><polygon fill="#90EE90" filter="url(#fo2zihommpcpd)" points="178,718,239,718,246,741.6094,433,741.6094,433,906,178,906,178,718" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="178" x2="246" y1="741.6094" y2="741.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="55" x="182" y="734.5332">ApiGate</text><!--MD5=[027ebfd53c01aea08f474edbf35d0797]
+cluster Models--><polygon fill="#90EE90" filter="url(#fo2zihommpcpd)" points="56,718,114,718,121,741.6094,154,741.6094,154,808,56,808,56,718" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="56" x2="121" y1="741.6094" y2="741.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="60" y="734.5332">Models</text><!--MD5=[ea6b7af3e51d84ddf7e64ed6d2476e03]
+cluster ms--><polygon fill="#ADD8E6" filter="url(#fo2zihommpcpd)" points="505,715,515,705,867,705,867,806,857,816,505,816,505,715" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="857" x2="867" y1="715" y2="705"/><line style="stroke:#000000;stroke-width:1.5;" x1="505" x2="857" y1="715" y2="715"/><line style="stroke:#000000;stroke-width:1.5;" x1="857" x2="857" y1="715" y2="816"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="133" x="615.5" y="732.5332">Messenger Stream</text><!--MD5=[eb5f757f7d8922bb4e10ed6a0c44a415]
+entity DetectionView--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="109" x="456.5" y="151"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="466.5" y="175.5332">DetectionView</text><!--MD5=[dc1bba6e51b0840a7da21b6223d8841d]
+entity RegisterView--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="102" x="319" y="151"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="329" y="175.5332">RegisterView</text><!--MD5=[85ee20682b89e0599bc306d5d9cc226f]
+entity DetectionViewModel--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="147" x="494.5" y="365"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="504.5" y="389.5332">DetectionViewModel</text><!--MD5=[13d56471a8797bb53620f89ee6009e5a]
+entity RegisterViewModel--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="140" x="319" y="365"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="329" y="389.5332">RegisterViewModel</text><!--MD5=[a9af7399a74e59de53c2ab436e00a73e]
+entity Modal--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="58" x="141" y="365"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="151" y="389.5332">Modal</text><!--MD5=[7458faf7fdf3a70564f62e1b33d99b94]
+entity FramesHutch--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="104" x="306" y="535"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="316" y="559.5332">FramesHutch</text><!--MD5=[10a3ddd021f41fabe800f2fc1766913c]
+entity LivenessCheck--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="116" x="194" y="754"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="204" y="778.5332">LivenessCheck</text><!--MD5=[0b4846db015581273f652c6d394a5ede]
+entity Matcher--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="71" x="345.5" y="754"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="355.5" y="778.5332">Matcher</text><!--MD5=[9ec6572d736dc4c745b46819be55ba85]
+entity Register--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="73" x="215.5" y="852"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="225.5" y="876.5332">Register</text><!--MD5=[c50b3378b09b932373c7c3bb734d8dba]
+entity Entities--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="66" x="72" y="754"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="82" y="778.5332">Entities</text><!--MD5=[6b3cff0b7a89ee6b05029c7192cf6a59]
+entity StreamingService--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="131" x="711.5" y="754"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="721.5" y="778.5332">StreamingService</text><!--MD5=[6a03ff9e34556674f197ffb2665ba2c4]
+entity OpenCVServices--><rect fill="#FEFECE" filter="url(#fo2zihommpcpd)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="128" x="548" y="754"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="558" y="778.5332">OpenCVServices</text><!--MD5=[6fb67c0341d0b71c96f06fc2a8a1f871]
+link bs to mco--><path d="M262.6718,555.8628 C262.5279,555.8798 262.3824,555.897 262.2352,555.9145 C261.9407,555.9495 261.6395,555.9857 261.3317,556.023 C260.716,556.0977 260.0737,556.1772 259.4056,556.2616 C258.0695,556.4304 256.6303,556.619 255.0947,556.8289 C252.0234,557.2488 248.5664,557.7542 244.7764,558.3581 C229.6166,560.7738 209.1306,564.765 186.7063,571.16 C141.8575,583.95 89.255,606.355 56,645 C53.6638,647.7144 51.4938,650.5755 49.4786,653.555 C48.471,655.0447 47.5021,656.564 46.5704,658.1094 C46.1045,658.8821 45.2005,660.4466 45.2005,660.4466 " fill="none" id="bs-mco" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="45.2005,660.4466,51.6463,657.2136,51.1411,650.0202,44.6953,653.2532,45.2005,660.4466" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="262.6718,555.8628,253.2659,552.9423,257.706,556.4473,254.2011,560.8875,262.6718,555.8628" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9d92df73520798cc6fd54736b6633f9e]
+link bs to ms--><path d="M270.8649,597.1968 C270.8857,597.3347 270.9068,597.4727 270.9282,597.6107 C270.9709,597.8866 271.0146,598.1627 271.0595,598.439 C271.2391,599.544 271.4365,600.6511 271.653,601.7578 C272.519,606.1844 273.6908,610.6037 275.2534,614.8527 C278.3787,623.3506 283.0675,631.1675 290,637 C314.35,657.49 405.58,628.85 433,645 C461.29,661.665 481.1125,692.69 493.9487,719.9025 C497.1578,726.7056 499.9302,733.2705 502.2892,739.3131 C502.8789,740.8237 503.4428,742.3018 503.9812,743.7427 C504.2504,744.4632 504.5132,745.1744 504.7697,745.8757 C504.8339,746.0511 504.9609,746.3999 504.9609,746.3999 " fill="none" id="bs-ms" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="504.9609,746.3999,506.6688,739.394,500.8586,735.1229,499.1508,742.1289,504.9609,746.3999" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270.8649,597.1968,268.2525,606.6929,271.6109,602.1409,276.1629,605.4993,270.8649,597.1968" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5791e8c1ebd7e09b5460036cbc3a10fa]
+link xaml to vms--><path d="M271,237.0131 C271,237.7625 271,238.515 271,239.2705 C271,245.3142 271,251.5461 271,257.872 C271,261.035 271,264.2214 271,267.4196 C271,269.0187 271,270.6207 271,272.2242 C271,273.0259 271,273.828 271,274.6303 C271,275.0314 271,275.4326 271,275.8338 C271,276.0344 271,276.235 271,276.4357 C271,276.536 271,276.6363 271,276.7366 C271,276.7867 271,276.8369 271,276.887 " fill="none" id="xaml-vms" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="271,276.887,275,267.887,271,271.887,267,267.887,271,276.887" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="271,237.0131,267,246.0131,271,242.0131,275,246.0131,271,237.0131" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a766f2dfc043b26f216d1f32b137aea9]
+link uis to vms--><path d="M102.1065,320.9181 C102.1429,320.514 102.1807,320.1096 102.2201,319.7048 C102.3775,318.0856 102.5591,316.4609 102.767,314.8341 C103.5985,308.3266 104.8493,301.7838 106.6464,295.4163 C110.2406,282.6813 116.02,270.6475 125,261 C130.44,255.16 134.57,257.89 142.5,257 C158.53,255.19 202.5,250.8 215,261 C237.185,279.09 250.9425,307.8725 259.2663,333.0475 C260.3067,336.1944 261.2623,339.2849 262.1388,342.2911 C262.3579,343.0426 262.5721,343.7889 262.7814,344.5295 C262.8338,344.7147 262.9375,345.0839 262.9375,345.0839 " fill="none" id="uis-vms" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="262.9375,345.0839,265.1685,338.2265,259.6967,333.5298,257.4658,340.3871,262.9375,345.0839" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="102.1065,320.9181,106.897,312.3128,102.5546,315.9382,98.9292,311.5958,102.1065,320.9181" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[60f684ff062da605f52e8bb2145f0a0e]
+link vms to bs--><path d="M271,451.0312 C271,451.0312 271,451.6543 271,451.9664 C271,452.5905 271,453.216 271,453.8426 C271,458.8555 271,463.9428 271,469.03 C271,474.1172 271,479.2042 271,484.2165 C271,485.4695 271,486.7179 271,487.9605 C271,488.5817 271,489.2015 271,489.8197 C271,490.1288 271,490.4375 271,490.7458 " fill="none" id="vms-bs" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="271,490.7458,275,481.7458,271,485.7458,267,481.7458,271,490.7458" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="271,451.0312,267,457.0312,271,463.0312,275,457.0312,271,451.0312" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[595518033e0cd0efbd41df3b5b5fb91a]
+link LivenessCheck to Matcher--><!--MD5=[23a506c2829b315e09d846a60495d817]
+link LivenessCheck to Register--><!--MD5=[c6431b415061acb4636100fcf3321abe]
+@startuml
+
+node "Messenger Client" as mcl #LightBlue {
+ package XAML as xaml #LightGreen {
+	 rectangle MainWindow {
+		 rectangle DetectionView
+		 rectangle RegisterView
+	 }
+ }
+ package "View Models" as vms #LightGreen {
+	  rectangle MainViewModel {
+		 rectangle DetectionViewModel
+		 rectangle RegisterViewModel
+	 }
+ }
+ package "UI Services" as uis #LightGreen {
+	 rectangle Modal
+ }
+ package "Business Services" as bs #LightGreen {
+	 rectangle FramesHutch
+ }
+}
+
+node "Messenger Core" as mco  #LightBlue {
+	package ApiGate  #LightGreen  {
+		rectangle LivenessCheck
+		rectangle Matcher
+		rectangle Register
+	}
+	package Models #LightGreen {
+ 		rectangle Entities 
+	}
+	package Models #LightGreen {
+ 		rectangle Entities 
+	}
+}
+
+node "Messenger Stream" as ms #LightBlue {
+ rectangle StreamingService
+ rectangle OpenCVServices
+}
+
+bs <- -* mco
+bs <- -* ms
+xaml <- -> vms
+vms o-l-> uis
+vms o- -> bs
+ 
+@enduml
+
+PlantUML version 1.2021.12(Tue Oct 05 19:01:58 GMT+03:00 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg></p><h2 class="mume-header" id="3-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D0%BC%D1%8B%D0%B5-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8">3. &#x418;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x435;&#x43C;&#x44B;&#x435; &#x442;&#x435;&#x445;&#x43D;&#x43E;&#x43B;&#x43E;&#x433;&#x438;&#x438;</h2>
+
+<p>&#x412; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x435; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x43D;&#x430; &#x442;&#x435;&#x445;&#x43D;&#x43E;&#x43B;&#x43E;&#x433;&#x438;&#x44F; WPF, &#x43F;&#x43B;&#x430;&#x442;&#x444;&#x43E;&#x440;&#x43C;&#x430; .Net 5 &#x438; &#x44F;&#x437;&#x44B;&#x43A; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F; C# 9 &#x432;&#x435;&#x440;&#x441;&#x438;&#x438;. &#x414;&#x43B;&#x44F; &#x43F;&#x435;&#x440;&#x432;&#x438;&#x447;&#x43D;&#x43E;&#x439; &#x434;&#x435;&#x442;&#x435;&#x43A;&#x446;&#x438;&#x438; &#x438; &#x432;&#x441;&#x435;&#x439; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x44B; &#x441; &#x43A;&#x430;&#x43C;&#x435;&#x440;&#x43E;&#x439; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x435;&#x442;&#x441;&#x44F; OpenCV. &#x414;&#x430;&#x43D;&#x43D;&#x43E;&#x435; &#x41F;&#x41E; &#x441;&#x43E;&#x434;&#x435;&#x440;&#x436;&#x438;&#x442; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x443; OpenCvSharp, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x430;&#x44F; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442; &#x438;&#x437; &#x441;&#x435;&#x431;&#x44F; &#x431;&#x438;&#x43D;&#x434;&#x438;&#x43D;&#x433;&#x438; &#x43A; &#x43E;&#x440;&#x438;&#x433;&#x438;&#x43D;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x439; C++ &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435; OpenCV  &#x434;&#x43B;&#x44F; &#x43F;&#x43B;&#x430;&#x442;&#x444;&#x43E;&#x440;&#x43C;&#x44B; .Net.<br>
+&#x412;&#x432;&#x438;&#x434;&#x443; &#x43E;&#x441;&#x43E;&#x431;&#x435;&#x43D;&#x43D;&#x43E;&#x441;&#x442;&#x435;&#x439; &#x442;&#x435;&#x445;&#x43D;&#x43E;&#x43B;&#x43E;&#x433;&#x438;&#x438;, &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x439; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442; &#x43F;&#x440;&#x435;&#x434;&#x43D;&#x430;&#x437;&#x43D;&#x430;&#x447;&#x435;&#x43D; &#x434;&#x43B;&#x44F; &#x441;&#x431;&#x43E;&#x440;&#x43A;&#x438; &#x438; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x43A;&#x430; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x43D;&#x430; &#x41E;&#x421; Windows. &#x41D;&#x43E; &#x437;&#x430;&#x432;&#x438;&#x441;&#x438;&#x43C;&#x43E;&#x441;&#x442;&#x44C; &#x43E;&#x442; Windows &#x441;&#x43E;&#x445;&#x440;&#x430;&#x43D;&#x44F;&#x435;&#x442;&#x441;&#x44F; &#x438;&#x441;&#x43A;&#x43B;&#x44E;&#x447;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E; &#x432; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x435; Messenger Client, &#x432; &#x43C;&#x43E;&#x434;&#x443;&#x43B;&#x435; XAML. &#x412;&#x441;&#x435; &#x43E;&#x441;&#x442;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x435; &#x447;&#x430;&#x441;&#x442;&#x438; &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x44B; &#x43A;&#x440;&#x43E;&#x441;&#x43F;&#x43B;&#x430;&#x442;&#x444;&#x43E;&#x440;&#x43C;&#x435;&#x43D;&#x43D;&#x43E;, &#x431;&#x435;&#x437; &#x438;&#x441;&#x43E;&#x43F;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F; windows-only &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;, &#x447;&#x442;&#x43E; &#x43F;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x438;&#x442; &#x432; &#x434;&#x430;&#x43B;&#x44C;&#x43D;&#x435;&#x439;&#x448;&#x435;&#x43C; &#x431;&#x435;&#x437; &#x443;&#x441;&#x438;&#x43B;&#x438;&#x439; &quot;&#x43E;&#x442;&#x431;&#x440;&#x43E;&#x441;&#x438;&#x442;&#x44C;&quot; &#x43F;&#x43B;&#x430;&#x442;&#x444;&#x43E;&#x440;&#x43C;&#x43E;&#x437;&#x430;&#x432;&#x438;&#x441;&#x438;&#x43C;&#x443;&#x44E; &#x447;&#x430;&#x441;&#x442;&#x44C; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F;, &#x438; &#x43F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x438;&#x442;&#x44C; &#x434;&#x430;&#x43D;&#x43D;&#x43E;&#x435; &#x440;&#x435;&#x448;&#x435;&#x43D;&#x438;&#x435; &#x43A; &#x432;&#x435;&#x431;/&#x434;&#x435;&#x441;&#x43A;&#x442;&#x43E;&#x43F; UI &#x434;&#x43B;&#x44F; Linux &#x438;&#x43B;&#x438; Mac, &#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;, &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x44F; &#x444;&#x440;&#x435;&#x439;&#x43C;&#x432;&#x43E;&#x440;&#x43A; Avalonia &#x438;&#x43B;&#x438; Blazor.<br>
+OpenCvSharp &#x442;&#x43E;&#x436;&#x435; &#x44F;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F; &#x43A;&#x440;&#x43E;&#x441;&#x43F;&#x43B;&#x430;&#x442;&#x444;&#x43E;&#x440;&#x43C;&#x435;&#x43D;&#x43D;&#x44B;&#x43C; &#x440;&#x435;&#x448;&#x435;&#x43D;&#x438;&#x435;&#x43C;.</p>
+<h2 class="mume-header" id="4-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-api-gate">4. &#x41E;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x435; API Gate</h2>
+
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

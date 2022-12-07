@@ -1,0 +1,15 @@
+{
+	"show_gender": true,
+	"show_age": true,
+	"show_department": true,
+	"engine_id": 0,
+	"comment": "0-Luna 1-Tevian 2-NTach 3-All",
+	"luna-id": "1",
+	"n-tech-id": "",
+	"tevian-id": "",
+	"upload-file-gate": "http://10.124.33.57:5000/api/v1/file",
+	"liveness-gate": "http://10.124.33.57:5000/api/v1/task/anti_spoofing",
+	"best-match-gate": "",
+	"task-result-gate": ""
+}
+
