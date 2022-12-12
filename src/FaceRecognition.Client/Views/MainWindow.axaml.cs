@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace FaceRecognitionClient;
+namespace FaceRecognition.Client.Views;
 
 public partial class MainWindow : Window
 {

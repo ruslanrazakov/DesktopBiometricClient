@@ -1,5 +1,5 @@
 ﻿<linker>
   <!-- Can be removed if CompiledBinding and no reflection are used -->
-  <assembly fullname="FaceRecognitionClient" preserve="All" />
+  <assembly fullname="FaceRecognition.Client" preserve="All" />
   <assembly fullname="Avalonia.Themes.Fluent" preserve="All" />
 </linker>
